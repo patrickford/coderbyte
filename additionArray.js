@@ -7,6 +7,11 @@ function combinations(nums) {
   for (var i = 0; i < len ; i++){
       temp = [];
       for (var j=0; j < nums.length; j++) {
+        console.log("i = " + i);
+        console.log("j = " + j);
+        console.log("Math.pow(2,j) = " + Math.pow(2,j));
+        console.log("i & Math.pow(2,j) = " + (i & Math.pow(2,j)));
+        console.log("-------------------------------------");
           if ((i & Math.pow(2,j))){ 
               temp.push(nums[j])
           }
